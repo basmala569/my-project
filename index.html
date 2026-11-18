@@ -1,644 +1,938 @@
-<html>
-  <head dir="rtl">
-    <link href="css/stylesheet.css" rel="stylesheet" />
-    <title>viewport</title>
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/stylesheet.css" />
+    <title>games wbsite</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div class="sidebar">
-      <div class="logo">
-        <div class="logo-icon">💲</div>
-        <div>
-          <h2>مدبّر</h2>
-          <p>إدارة أموالك بذكاء</p>
-        </div>
-      </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black sticky-top py-3">
+      <div class="container">
+        <a class="navbar-brand fw-bold fs-4" href="#home"> 🎮 GameArena </a>
 
-      <div class="menu">
-        <div class="menu-item active">
-          <span>⌂</span>
-          <p>الصفحة الرئيسية</p>
-        </div>
+        <button
+          class="navbar-toggler border-warning"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-        <div class="item">
-          <span>⇄</span>
-          <p>المعاملات</p>
-        </div>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto gap-lg-3">
+            <li class="nav-item">
+              <a class="nav-link active" href="#home">Home</a>
+            </li>
 
-        <div class="item">
-          <span>◔</span>
-          <p>الميزانيات</p>
-        </div>
+            <li class="nav-item">
+              <a class="nav-link" href="#games">OUR GAMES</a>
+            </li>
 
-        <div class="item">
-          <span>♟</span>
-          <p>المدخرات</p>
-        </div>
+            <li class="nav-item">
+              <a class="nav-link" href="#what-we-do">What We Do</a>
+            </li>
 
-        <div class="item">
-          <span>▤</span>
-          <p>الفواتير الشهرية</p>
-        </div>
+            <li class="nav-item">
+              <a class="nav-link" href="#team">Our Team</a>
+            </li>
 
-        <div class="item">
-          <span>⚡</span>
-          <p>إجراءات سريعة</p>
-        </div>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact Us</a>
+            </li>
+          </ul>
 
-        <div class="item">
-          <span class="blue">➤</span>
-          <p>إرسال أموال</p>
-        </div>
+          <div class="d-flex align-items-center gap-3 mt-3 mt-lg-0">
+            <a
+              href="#contact"
+              class="nav-icon text-white text-decoration-none"
+              aria-label="Notifications"
+            >
+              🔔
+            </a>
 
-        <div class="item">
-          <span class="green">+</span>
-          <p>إضافة أموال</p>
-        </div>
+            <a
+              href="#contact"
+              class="nav-icon text-white text-decoration-none"
+              aria-label="Messages"
+            >
+              ▢
+            </a>
 
-        <div class="item">
-          <span class="purple">▦</span>
-          <p>دفع فاتورة</p>
-        </div>
-
-        <div class="item">
-          <span class="orange">↗</span>
-          <p>استثمار</p>
-        </div>
-      </div>
-    </div>
-    <div class="inner">
-      <div bar>
-        <div class="user">
-          <img
-            src=" https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-2.jpg"
-          />
-          <div>
-            <p>سيف اسامة</p>
-            <p>حساب مميز</p>
-          </div>
-        </div>
-        <div class="icons">
-          <span>🔔</span>
-          <span>🔍</span>
-        </div>
-        <div class="online">
-          <span class="dot"></span>
-          متصل
-        </div>
-        <div class="log">
-          <div>
-            <h1>مدبر</h1>
-            <p>ادارة اموالك بذكاء</p>
-          </div>
-          <div class="logo-icon">💲</div>
-        </div>
-      </div>
-      <div class="cards">
-        <div class="card">
-          <p>المصروفات</p>
-          <h2>10,000جنيه</h2>
-          <p class="red">1.2%</p>
-        </div>
-        <div class="card">
-          <p>الدخل</p>
-          <h2>15,000جنيه</h2>
-          <p class="green">8.2%</p>
-        </div>
-        <div class="card">
-          <p>الرصيد الحالي</p>
-          <h2>8,450جنيه</h2>
-          <p class="green">2.5%</p>
-        </div>
-      </div>
-      <div class="transactions">
-        <div class="transactions-title">
-          <h2>المعاملات الأخيرة</h2>
-          <a href="#">عرض الكل</a>
-        </div>
-
-        <table>
-          <thead>
-            <tr>
-              <th>المعاملة</th>
-              <th>الفئة</th>
-              <th>التاريخ</th>
-              <th>الحالة</th>
-              <th>المبلغ</th>
-            </tr>
-          </thead>
-
-          <tbody>
-            <tr>
-              <td>
-                <div class="transaction-user">
-                  <img
-                    src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-2.jpg"
-                  />
-                  <div>
-                    <b>محمود النجار</b>
-                    <span>تحويل أموال</span>
-                  </div>
-                </div>
-              </td>
-              <td><span class="category income">دخل</span></td>
-              <td>14 أكتوبر 2025</td>
-              <td><span class="status">مكتمل</span></td>
-              <td class="amount">+350 جنيه</td>
-            </tr>
-
-            <tr>
-              <td>
-                <div class="transaction-user">
-                  <div class="transaction-icon food">🍴</div>
-                  <div>
-                    <b>مطعم Meat Moot</b>
-                    <span>دفع طعام</span>
-                  </div>
-                </div>
-              </td>
-              <td><span class="category food-category">طعام</span></td>
-              <td>14 أكتوبر 2025</td>
-              <td><span class="status">مكتمل</span></td>
-              <td class="amount">-2200 جنيه</td>
-            </tr>
-
-            <tr>
-              <td>
-                <div class="transaction-user">
-                  <div class="transaction-icon shopping">🛒</div>
-                  <div>
-                    <b>مشتريات Amazon</b>
-                    <span>تسوق إلكتروني</span>
-                  </div>
-                </div>
-              </td>
-              <td><span class="category shopping-category">تسوق</span></td>
-              <td>13 أكتوبر 2025</td>
-              <td><span class="status">مكتمل</span></td>
-              <td class="amount">-1250 جنيه</td>
-            </tr>
-
-            <tr>
-              <td>
-                <div class="transaction-user">
-                  <img
-                    src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-3.jpg"
-                  />
-                  <div>
-                    <b>عمر المهدي</b>
-                    <span>دفع فاتورة منزلية</span>
-                  </div>
-                </div>
-              </td>
-              <td><span class="category bills-category">فواتير</span></td>
-              <td>13 أكتوبر 2025</td>
-              <td><span class="status">مكتمل</span></td>
-              <td class="amount">-1400 جنيه</td>
-            </tr>
-
-            <tr>
-              <td>
-                <div class="transaction-user">
-                  <img
-                    src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-4.jpg"
-                  />
-                  <div>
-                    <b>محمد عوض</b>
-                    <span>راتب شهر أكتوبر</span>
-                  </div>
-                </div>
-              </td>
-              <td><span class="category income">دخل</span></td>
-              <td>12 أكتوبر 2025</td>
-              <td><span class="status">مكتمل</span></td>
-              <td class="amount">+2500 جنيه</td>
-            </tr>
-
-            <tr>
-              <td>
-                <div class="transaction-user">
-                  <div class="transaction-icon fuel">⛽</div>
-                  <div>
-                    <b>محطة وقود Shell</b>
-                    <span>دفع وقود</span>
-                  </div>
-                </div>
-              </td>
-              <td><span class="category transport">مواصلات</span></td>
-              <td>12 أكتوبر 2025</td>
-              <td><span class="status pending">معلق</span></td>
-              <td class="amount">-700 جنيه</td>
-            </tr>
-
-            <tr>
-              <td>
-                <div class="transaction-user">
-                  <div class="transaction-icon netflix-icon">N</div>
-                  <div>
-                    <b>اشتراك Netflix</b>
-                    <span>اشتراك شهري</span>
-                  </div>
-                </div>
-              </td>
-              <td><span class="category subscription">ترفيه</span></td>
-              <td>11 أكتوبر 2025</td>
-              <td><span class="status">مكتمل</span></td>
-              <td class="amount">-780 جنيه</td>
-            </tr>
-
-            <tr>
-              <td>
-                <div class="transaction-user">
-                  <div class="transaction-icon fitness">✚</div>
-                  <div>
-                    <b>نادي FitLife</b>
-                    <span>اشتراك النادي</span>
-                  </div>
-                </div>
-              </td>
-              <td><span class="category health">صحة</span></td>
-              <td>10 أكتوبر 2025</td>
-              <td><span class="status">مكتمل</span></td>
-              <td class="amount">-500 جنيه</td>
-            </tr>
-
-            <tr>
-              <td>
-                <div class="transaction-user">
-                  <div class="transaction-icon education">🎓</div>
-                  <div>
-                    <b>كورس Jonas</b>
-                    <span>دورة تعليمية</span>
-                  </div>
-                </div>
-              </td>
-              <td><span class="category learning">تعليم</span></td>
-              <td>9 أكتوبر 2025</td>
-              <td><span class="status">مكتمل</span></td>
-              <td class="amount">-250 جنيه</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <div class="sections">
-        <div class="activities">
-          <div class="activities-title">
-            <h2>الأنشطة الحديثة</h2>
-          </div>
-
-          <div class="activity">
-            <div class="activity-icon blue-bg">♙</div>
-
-            <div class="activity-info">
-              <h3>إنشاء حساب توفير جديد</h3>
-              <p>تم إنشاء حساب توفير بنجاح</p>
-              <p class="activity-time">منذ ساعة</p>
-            </div>
-
-            <span class="activity-type blue-text">حساب</span>
-          </div>
-
-          <div class="activity">
-            <div class="activity-icon green-bg">▣</div>
-
-            <div class="activity-info">
-              <h3>إضافة بطاقة جديدة</h3>
-              <p>تم إضافة بطاقة Visa الجديدة بنجاح</p>
-              <p class="activity-time">منذ 3 ساعات</p>
-            </div>
-
-            <span class="activity-type green-text">بطاقة</span>
-          </div>
-
-          <div class="show-activities">
-            <a href="#">عرض جميع الأنشطة (23)</a>
-          </div>
-        </div>
-
-        <div class="bills">
-          <div class="bills-title">
-            <h2>الفواتير الشهرية</h2>
-          </div>
-
-          <h1>1920 جنيه</h1>
-          <p class="bills-description">إجمالي الفواتير الشهرية</p>
-
-          <div class="bills-list">
-            <div class="bill">
-              <div class="bill-icon electricity">⚡</div>
-              <h3>كهرباء</h3>
-              <p>400 جنيه</p>
-              <span>يستحق في 5 أيام</span>
-            </div>
-
-            <div class="bill">
-              <div class="bill-icon internet">◉</div>
-              <h3>الإنترنت</h3>
-              <p>450 جنيه</p>
-              <span>يستحق في 3 أيام</span>
-            </div>
-
-            <div class="bill">
-              <div class="bill-icon netflix">❌</div>
-              <h3>Netflix</h3>
-              <p>780 جنيه</p>
-              <span>يستحق في 15 يوم</span>
-            </div>
-
-            <div class="bill">
-              <div class="bill-icon phone">☎</div>
-              <h3>هاتف</h3>
-              <p>290 جنيه</p>
-              <span>يستحق في 10 أيام</span>
-            </div>
+            <a href="#home" class="btn btn-warning fw-bold px-4 py-2">
+              Sign In
+            </a>
           </div>
         </div>
       </div>
-      <div class="dashboard-panels">
-        <section class="panel income-expenses">
-          <div class="panel-header">
-            <h2>الدخل مقابل المصروفات</h2>
-            <a href="#">التفاصيل ←</a>
-          </div>
+    </nav>
 
-          <div class="chart-legend">
-            <span><i class="legend-dot expense-dot"></i> المصروفات</span>
-            <span><i class="legend-dot income-dot"></i> الدخل</span>
-          </div>
+    <section id="home" class="hero text-white">
+      <div class="container py-lg-5">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <h1 class="display-3 fw-bold lh-sm">
+              THE ULTIMATE<br />
+              <span>GAMING</span><br />
+              EXPERIENCE
+            </h1>
 
-          <div class="bar-chart">
-            <div class="chart-column">
-              <div class="bars">
-                <span class="bar expense-bar" style="height: 42%"></span>
-                <span class="bar income-bar" style="height: 85%"></span>
-              </div>
-              <span class="week-label">الأسبوع 4</span>
-            </div>
+            <p class="mt-4 mb-4">
+              Join millions of gamers worldwide in the most competitive eSports
+              tournaments. Experience next-level gaming with cutting-edge
+              technology and endless possibilities.
+            </p>
 
-            <div class="chart-column">
-              <div class="bars">
-                <span class="bar expense-bar" style="height: 38%"></span>
-                <span class="bar income-bar" style="height: 78%"></span>
-              </div>
-              <span class="week-label">الأسبوع 3</span>
-            </div>
+            <div class="d-flex flex-wrap gap-3">
+              <a href="#games" class="btn btn-warning btn-lg fw-bold">
+                Start Gaming Now
+              </a>
 
-            <div class="chart-column">
-              <div class="bars">
-                <span class="bar expense-bar" style="height: 45%"></span>
-                <span class="bar income-bar" style="height: 82%"></span>
-              </div>
-              <span class="week-label">الأسبوع 2</span>
-            </div>
-
-            <div class="chart-column">
-              <div class="bars">
-                <span class="bar expense-bar" style="height: 36%"></span>
-                <span class="bar income-bar" style="height: 75%"></span>
-              </div>
-              <span class="week-label">الأسبوع 1</span>
+              <a href="#games" class="btn btn-outline-warning btn-lg fw-bold">
+                Watch Tournaments
+              </a>
             </div>
           </div>
-        </section>
 
-        <section class="panel account-summary">
-          <div class="panel-header">
-            <h2>ملخص الحساب</h2>
-            <a href="#">التفاصيل ←</a>
-          </div>
+          <div class="col-lg-6 position-relative">
+            <img
+              src="https://game-arena-theta.vercel.app/assets/hero-img-C0b4IWtS.png"
+              alt="Gaming Setup"
+              class="img-fluid gaming-image"
+            />
 
-          <div class="account-row">
-            <div class="account-info">
-              <span class="account-icon bank-icon">▤</span>
+            <div class="players-card d-flex align-items-center gap-3">
+              <span class="fs-3">🏆</span>
+
               <div>
-                <h3>حساب جاري</h3>
-                <p>بنك مصر •••• 4532</p>
+                <p class="small mb-1">Active Players</p>
+                <h4 class="fw-bold mb-0">2.5M+</h4>
               </div>
             </div>
-            <strong>8,450 جنيه</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="games" class="games-section py-5">
+      <div class="container">
+        <div class="text-center games-heading mb-5">
+          <div class="section-label">
+            <span></span>
+            OUR GAMES
+            <span></span>
+          </div>
+          <h2 class="display-5 fw-bold">Our Latest Games</h2>
+        </div>
+
+        <div class="row g-4 games-grid" id="gamesGrid"></div>
+
+        <div
+          class="d-flex justify-content-center align-items-center gap-3 mt-4 games-controls"
+        >
+          <button type="button" class="game-arrow" id="prevGames">
+            &#8592;
+          </button>
+
+          <button type="button" class="game-arrow" id="nextGames">
+            &#8594;
+          </button>
+
+          <a
+            href="#all-games"
+            class="btn btn-outline-warning view-games-btn ms-2"
+          >
+            VIEW ALL GAMES
+          </a>
+        </div>
+
+        <div id="all-games" class="all-games-anchor"></div>
+      </div>
+    </section>
+
+    <script>
+      const games = [
+        {
+          name: "Alien Companions",
+          category: "ADVENTURE",
+          type: "MULTIPLAYER",
+          image:
+            "https://images.unsplash.com/photo-1614728263952-84ea256f9679?auto=format&fit=crop&w=900&q=85",
+        },
+        {
+          name: "Neon Racing",
+          category: "RACING",
+          type: "ACTION",
+          image:
+            "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=900&q=85",
+        },
+        {
+          name: "Space Odyssey",
+          category: "SCI-FI",
+          type: "ADVENTURE",
+          image:
+            "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=900&q=85",
+        },
+        {
+          name: "Fantasy Kingdom",
+          category: "FANTASY",
+          type: "ADVENTURE",
+          image:
+            "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=900&q=85",
+        },
+        {
+          name: "Battle Squad",
+          category: "SHOOTER",
+          type: "MULTIPLAYER",
+          image:
+            "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=900&q=85",
+        },
+        {
+          name: "Football Stars",
+          category: "SPORTS",
+          type: "COMPETITIVE",
+          image:
+            "https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=900&q=85",
+        },
+        {
+          name: "Esports Arena",
+          category: "ESPORTS",
+          type: "MULTIPLAYER",
+          image:
+            "https://images.unsplash.com/photo-1547394765-185e1e68f34e?auto=format&fit=crop&w=900&q=85",
+        },
+        {
+          name: "Galaxy Explorer",
+          category: "SPACE",
+          type: "EXPLORATION",
+          image:
+            "https://images.unsplash.com/photo-1462331940025-496dfbfc7564?auto=format&fit=crop&w=900&q=85",
+        },
+        {
+          name: "Cyber Warrior",
+          category: "ACTION",
+          type: "FIGHTING",
+          image:
+            "https://images.unsplash.com/photo-1535223289827-42f1e9919769?auto=format&fit=crop&w=900&q=85",
+        },
+      ];
+
+      let currentIndex = 0;
+      const gamesGrid = document.getElementById("gamesGrid");
+
+      function renderGames() {
+        gamesGrid.innerHTML = [0, 1, 2]
+          .map((offset) => {
+            const game = games[(currentIndex + offset) % games.length];
+
+            return `
+            <div class="col-12 col-md-4">
+                <div class="game-card position-relative overflow-hidden rounded-4">
+                    <img src="${game.image}" alt="${game.name}"
+                         class="w-100 h-100 object-fit-cover">
+ 
+                    <div class="game-overlay position-absolute top-0 start-0 w-100 h-100
+                                p-3 d-flex flex-column justify-content-between">
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="badge rounded-pill text-bg-dark">${game.category}</span>
+                            <span class="badge rounded-pill text-bg-dark">${game.type}</span>
+                        </div>
+ 
+                        <h5 class="fw-bold mb-1">${game.name}</h5>
+                    </div>
+                </div>
+            </div>
+        `;
+          })
+          .join("");
+      }
+
+      document.getElementById("nextGames").addEventListener("click", () => {
+        currentIndex = (currentIndex + 3) % games.length;
+        renderGames();
+      });
+
+      document.getElementById("prevGames").addEventListener("click", () => {
+        currentIndex = (currentIndex - 3 + games.length) % games.length;
+        renderGames();
+      });
+
+      renderGames();
+    </script>
+
+    <section id="what-we-do" class="py-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="text-white fw-bold display-5">
+            We Build <span class="text-warning">Interactive</span> Journeys
+          </h2>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-6 col-lg-3">
+            <div
+              class="card service-card bg-dark text-white h-100 rounded-4 position-relative"
+            >
+              <div
+                class="card-body d-flex flex-column justify-content-center align-items-center text-center"
+              >
+                <div
+                  class="service-icon bg-primary text-warning rounded-3 p-3 mb-3 fs-3"
+                >
+                  <i class="bi bi-pc-display"></i>
+                </div>
+                <h5 class="fw-bold">PC Game<br />Development</h5>
+              </div>
+              <span class="corner top-corner"></span>
+              <span class="corner bottom-corner"></span>
+            </div>
           </div>
 
-          <div class="account-row">
-            <div class="account-info">
-              <span class="account-icon saving-icon">♧</span>
-              <div>
-                <h3>حساب التوفير</h3>
-                <p>بنك مصر •••• 8901</p>
+          <div class="col-6 col-lg-3">
+            <div
+              class="card service-card bg-dark text-white h-100 rounded-4 position-relative"
+            >
+              <div
+                class="card-body d-flex flex-column justify-content-center align-items-center text-center"
+              >
+                <div
+                  class="service-icon bg-primary text-warning rounded-3 p-3 mb-3 fs-3"
+                >
+                  <i class="bi bi-phone"></i>
+                </div>
+                <h5 class="fw-bold">Mobile Game<br />Development</h5>
               </div>
+              <span class="corner top-corner"></span>
+              <span class="corner bottom-corner"></span>
             </div>
-            <strong>297,540 جنيه</strong>
           </div>
 
-          <div class="account-row">
-            <div class="account-info">
-              <span class="account-icon wallet-icon">▰</span>
-              <div>
-                <h3>بطاقة الائتمان</h3>
-                <p>متاح: 1,850 جنيه من 2,500 جنيه</p>
-              </div>
+          <div class="col-6 col-lg-3">
+            <div
+              class="card service-image rounded-4 h-100 justify-content-center align-items-center"
+            >
+              🎮
             </div>
-            <strong class="debt-amount">-6,000 جنيه</strong>
           </div>
- 
-        </section>
-      </div>
-      <div class="panel budget-overview">
 
- 
- <div class="dashboard-bottom">
- 
-  <section class="panel budget-overview">
-    <div class="panel-header">
-      <h2>نظرة عامة على الميزانية</h2>
-      <a href="#">التفاصيل ←</a>
-    </div>
- 
-    <div class="budget-main">
-      <div class="budget-total">
-        <span>إجمالي الميزانية</span>
-        <h1>10000 <small>جنيه</small></h1>
-      </div>
- 
-      <div class="budget-remaining">
-        <span>المتبقي</span>
-        <strong>1750 جنيه</strong>
-      </div>
-    </div>
- 
-    <div class="budget-progress-info">
-      <span>82.5%</span>
-      <span>المستخدم: 8250 جنيه</span>
-    </div>
- 
-    <div class="budget-progress">
-      <div class="budget-progress-value" style="width: 82.5%"></div>
-    </div>
- 
-    <div class="budget-categories">
-      <div class="budget-category">
-        <div class="category-icon entertainment-icon">▦</div>
-        <div class="category-details">
-          <h3>ترفيه</h3>
-          <p>الميزانية: 1500 جنيه</p>
-          <div class="category-progress orange-progress">
-            <span style="width: 50%"></span>
-          </div>
-        </div>
-        <div class="category-status">
-          <strong>750 جنيه</strong>
-          <span class="status-green">متبقي 50%</span>
-        </div>
-      </div>
- 
-      <div class="budget-category">
-        <div class="category-icon bills-icon">▤</div>
-        <div class="category-details">
-          <h3>فواتير</h3>
-          <p>الميزانية: 2000 جنيه</p>
-          <div class="category-progress red-progress">
-            <span style="width: 100%"></span>
-          </div>
-        </div>
-        <div class="category-status">
-          <strong>2000 جنيه</strong>
-          <span class="status-red">مستخدم 100%</span>
-        </div>
-      </div>
- 
-      <div class="budget-category">
-        <div class="category-icon personal-icon">♥</div>
-        <div class="category-details">
-          <h3>العناية الشخصية</h3>
-          <p>الميزانية: 1500 جنيه</p>
-          <div class="category-progress pink-progress">
-            <span style="width: 80%"></span>
-          </div>
-        </div>
-        <div class="category-status">
-          <strong>1200 جنيه</strong>
-          <span class="status-yellow">متبقي 20%</span>
-        </div>
-      </div>
- 
-      <div class="budget-category">
-        <div class="category-icon home-icon">🛒</div>
-        <div class="category-details">
-          <h3>مستلزمات المنزل</h3>
-          <p>الميزانية: 5000 جنيه</p>
-          <div class="category-progress green-progress">
-            <span style="width: 86%"></span>
-          </div>
-        </div>
-        <div class="category-status">
-          <strong>4300 جنيه</strong>
-          <span class="status-green">متبقي 14%</span>
-        </div>
-      </div>
-    </div>
-  </section>
- 
-  <section class="panel payment-panel">
-    <div class="panel-header">
-      <h3>وسائل الدفع</h3>
-      <a href="#">إدارة ←</a>
-    </div>
- 
-    <div class="payment-cards">
- 
-      <div class="payment-card">
-        <div class="payment-card-inner">
-          <div class="payment-card-front visa-card">
-            <div class="card-top">
-              <span class="visa-logo">VISA</span>
-              <span class="card-chip"></span>
-            </div>
-            <div class="card-number">4532 •••• •••• ••••</div>
-            <div class="card-bottom">
-              <div>
-                <small>تنتهي</small>
-                <strong>12/26</strong>
+          <div class="col-6 col-lg-3">
+            <div
+              class="card service-card bg-dark text-white h-100 rounded-4 position-relative"
+            >
+              <div
+                class="card-body d-flex flex-column justify-content-center align-items-center text-center"
+              >
+                <div
+                  class="service-icon bg-primary text-warning rounded-3 p-3 mb-3 fs-3"
+                >
+                  <i class="bi bi-headset-vr"></i>
+                </div>
+                <h5 class="fw-bold">AR/VR<br />Solutions</h5>
               </div>
-              <div class="card-holder">
-                <small>حامل البطاقة</small>
-                <strong>سيف أسامة</strong>
-              </div>
+              <span class="corner top-corner"></span>
+              <span class="corner bottom-corner"></span>
             </div>
           </div>
- 
-          <div class="payment-card-back visa-card">
-            <small>بيانات البطاقة</small>
-            <div class="magnetic-strip"></div>
-            <label>رقم البطاقة</label>
-            <div class="card-field">4532 •••• •••• ••••</div>
-            <label>CVV</label>
-            <div class="cvv-field">•••</div>
+
+          <div class="col-6 col-lg-3">
+            <div
+              class="card service-card bg-dark text-white h-100 rounded-4 position-relative"
+            >
+              <div
+                class="card-body d-flex flex-column justify-content-center align-items-center text-center"
+              >
+                <div
+                  class="service-icon bg-primary text-warning rounded-3 p-3 mb-3 fs-3"
+                >
+                  <i class="bi bi-boxes"></i>
+                </div>
+                <h5 class="fw-bold">AR/VR<br />Design</h5>
+              </div>
+              <span class="corner top-corner"></span>
+              <span class="corner bottom-corner"></span>
+            </div>
+          </div>
+
+          <div class="col-6 col-lg-3">
+            <div
+              class="card service-image rounded-4 h-100 justify-content-center align-items-center"
+            >
+              🦸
+            </div>
+          </div>
+
+          <div class="col-6 col-lg-3">
+            <div
+              class="card service-card bg-dark text-white h-100 rounded-4 position-relative"
+            >
+              <div
+                class="card-body d-flex flex-column justify-content-center align-items-center text-center"
+              >
+                <div
+                  class="service-icon bg-primary text-warning rounded-3 p-3 mb-3 fs-3"
+                >
+                  <i class="bi bi-playstation"></i>
+                </div>
+                <h5 class="fw-bold">PS4 Game<br />Development</h5>
+              </div>
+              <span class="corner top-corner"></span>
+              <span class="corner bottom-corner"></span>
+            </div>
+          </div>
+
+          <div class="col-6 col-lg-3">
+            <div
+              class="card service-card bg-dark text-white h-100 rounded-4 position-relative"
+            >
+              <div
+                class="card-body d-flex flex-column justify-content-center align-items-center text-center"
+              >
+                <div
+                  class="service-icon bg-primary text-warning rounded-3 p-3 mb-3 fs-3"
+                >
+                  <i class="bi bi-box"></i>
+                </div>
+                <h5 class="fw-bold">3D<br />Modelling</h5>
+              </div>
+              <span class="corner top-corner"></span>
+              <span class="corner bottom-corner"></span>
+            </div>
           </div>
         </div>
       </div>
- 
-      <div class="payment-card">
-        <div class="payment-card-inner">
-          <div class="payment-card-front mastercard-card">
-            <div class="card-top">
-              <span class="mastercard-logo"><i></i><i></i></span>
-              <span class="card-chip"></span>
-            </div>
-            <div class="card-number">8901 •••• •••• ••••</div>
-            <div class="card-bottom">
-              <div>
-                <small>تنتهي</small>
-                <strong>08/27</strong>
-              </div>
-              <div class="card-holder">
-                <small>حامل البطاقة</small>
-                <strong>سيف أسامة</strong>
-              </div>
-            </div>
+    </section>
+
+    <section id="game-logos" class="py-4">
+      <div class="logo-slider mb-3">
+        <div class="logo-track move-left">
+          <div class="logo-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons@v15/icons/fortnite.svg"
+            />
           </div>
- 
-          <div class="payment-card-back mastercard-card">
-            <small>بيانات البطاقة</small>
-            <div class="magnetic-strip"></div>
-            <label>رقم البطاقة</label>
-            <div class="card-field">8901 •••• •••• ••••</div>
-            <label>CVV</label>
-            <div class="cvv-field">•••</div>
+
+          <div class="logo-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons@v15/icons/minecraft.svg"
+            />
+          </div>
+
+          <div class="logo-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons@v15/icons/amongus.svg"
+            />
+          </div>
+
+          <div class="logo-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons@v15/icons/valorant.svg"
+            />
+          </div>
+
+          <div class="logo-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons@v15/icons/leagueoflegends.svg"
+            />
+          </div>
+
+          <div class="logo-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons@v15/icons/roblox.svg"
+            />
+          </div>
+
+          <div class="logo-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons@v15/icons/fortnite.svg"
+            />
+          </div>
+
+          <div class="logo-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons@v15/icons/minecraft.svg"
+            />
           </div>
         </div>
       </div>
- 
-      <div class="payment-card">
-        <div class="payment-card-inner">
-          <div class="payment-card-front paypal-card">
-            <div class="card-top">
-              <span class="paypal-logo">P<span>›</span></span>
-              <span class="card-chip"></span>
-            </div>
-            <div class="paypal-title">حساب PayPal</div>
-            <div class="card-bottom">
-              <div>
-                <small>الحالة</small>
-                <strong class="verified">موثق</strong>
+
+      <div class="logo-slider">
+        <div class="logo-track move-right">
+          <div class="logo-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons@v15/icons/roblox.svg"
+            />
+          </div>
+
+          <div class="logo-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons@v15/icons/valorant.svg"
+            />
+          </div>
+
+          <div class="logo-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons@v15/icons/amongus.svg"
+            />
+          </div>
+
+          <div class="logo-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons@v15/icons/minecraft.svg"
+            />
+          </div>
+
+          <div class="logo-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons@v15/icons/leagueoflegends.svg"
+            />
+          </div>
+
+          <div class="logo-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons@v15/icons/fortnite.svg"
+            />
+          </div>
+
+          <div class="logo-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons@v15/icons/roblox.svg"
+            />
+          </div>
+
+          <div class="logo-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons@v15/icons/valorant.svg"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="team" class="team-section py-5 text-white">
+      <div class="container">
+        <div class="text-center mb-5">
+          <div
+            class="d-flex align-items-center justify-content-center gap-3 mb-2"
+          >
+            <span class="team-line"></span>
+            <span class="text-warning fw-bold">OUR TEAM</span>
+            <span class="team-line"></span>
+          </div>
+
+          <h2 class="display-5 fw-bold">Our Best Team Members</h2>
+
+          <p class="text-secondary mt-3">
+            Meet the professional gamers and experts behind our success
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="team-card position-relative overflow-hidden rounded-3">
+              <img
+                src="https://i.pravatar.cc/600?img=12"
+                class="img-fluid w-100 h-100 team-img"
+                alt="Team Member"
+              />
+
+              <div
+                class="team-info position-absolute bottom-0 start-0 w-100 p-3"
+              >
+                <h5 class="fw-bold mb-1">Alex "Phantom" Chen</h5>
+                <p class="small mb-1">Pro Player - VALORANT</p>
+                <small>World Champion 2023</small>
               </div>
-              <div class="card-holder">
-                <small>الإيميل</small>
-                <strong>seif@example.com</strong>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="team-card position-relative overflow-hidden rounded-3">
+              <img
+                src="https://i.pravatar.cc/600?img=11"
+                class="img-fluid w-100 h-100 team-img"
+                alt="Team Member"
+              />
+
+              <div
+                class="team-info position-absolute bottom-0 start-0 w-100 p-3"
+              >
+                <h5 class="fw-bold mb-1">Ali "Nova" Ahmed</h5>
+                <p class="small mb-1">Pro Player - League of Legends</p>
+                <small>MVP 2023 Season</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="team-card position-relative overflow-hidden rounded-3">
+              <img
+                src="https://i.pravatar.cc/600?img=13"
+                class="img-fluid w-100 h-100 team-img"
+                alt="Team Member"
+              />
+
+              <div
+                class="team-info position-absolute bottom-0 start-0 w-100 p-3"
+              >
+                <h5 class="fw-bold mb-1">Marcus "Viper" Rodriguez</h5>
+                <p class="small mb-1">Head Coach - CS:GO</p>
+                <small>5x Major Winner</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="team-card position-relative overflow-hidden rounded-3">
+              <img
+                src="https://i.pravatar.cc/600?img=14"
+                class="img-fluid w-100 h-100 team-img"
+                alt="Team Member"
+              />
+
+              <div
+                class="team-info position-absolute bottom-0 start-0 w-100 p-3"
+              >
+                <h5 class="fw-bold mb-1">Self "Saga" Usami</h5>
+                <p class="small mb-1">Strategic Analyst</p>
+                <small>Data Science Expert</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="team-card position-relative overflow-hidden rounded-3">
+              <img
+                src="https://i.pravatar.cc/600?img=15"
+                class="img-fluid w-100 h-100 team-img"
+                alt="Team Member"
+              />
+
+              <div
+                class="team-info position-absolute bottom-0 start-0 w-100 p-3"
+              >
+                <h5 class="fw-bold mb-1">Jake "Storm" Wilson</h5>
+                <p class="small mb-1">Pro Player - Apex Legends</p>
+                <small>Rising Star 2023</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="team-card position-relative overflow-hidden rounded-3">
+              <img
+                src="https://i.pravatar.cc/600?img=16"
+                class="img-fluid w-100 h-100 team-img"
+                alt="Team Member"
+              />
+
+              <div
+                class="team-info position-absolute bottom-0 start-0 w-100 p-3"
+              >
+                <h5 class="fw-bold mb-1">David "Titan" Park</h5>
+                <p class="small mb-1">Team Captain - Dota 2</p>
+                <small>The International Winner</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="team-card position-relative overflow-hidden rounded-3">
+              <img
+                src="https://i.pravatar.cc/600?img=17"
+                class="img-fluid w-100 h-100 team-img"
+                alt="Team Member"
+              />
+
+              <div
+                class="team-info position-absolute bottom-0 start-0 w-100 p-3"
+              >
+                <h5 class="fw-bold mb-1">Khaled "Phoenix" Ali</h5>
+                <p class="small mb-1">Content Creator</p>
+                <small>2M+ Followers</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="team-card position-relative overflow-hidden rounded-3">
+              <img
+                src="https://i.pravatar.cc/600?img=18"
+                class="img-fluid w-100 h-100 team-img"
+                alt="Team Member"
+              />
+
+              <div
+                class="team-info position-absolute bottom-0 start-0 w-100 p-3"
+              >
+                <h5 class="fw-bold mb-1">Ryan "Ghost" Miller</h5>
+                <p class="small mb-1">Team Manager</p>
+                <small>Operations Director</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+<section id="contact" class="py-5 contact-section">
+  <div class="container py-4">
+ 
+    <div class="text-center mb-5">
+      <div class="d-flex justify-content-center align-items-center gap-3 mb-2">
+        <span class="contact-line"></span>
+        <span class="text-warning fw-bold">CONTACT US</span>
+        <span class="contact-line"></span>
+      </div>
+ 
+      <h2 class="display-5 fw-bold text-white">Get In Touch</h2>
+      <p class="text-light mt-3">
+        Have questions or need support? We're here to help!
+      </p>
+    </div>
+ 
+    <div class="row g-4">
+ 
+       <div class="col-lg-6">
+ 
+        <div class="row g-4">
+ 
+           <div class="col-12">
+            <div class="card contact-card border-0 rounded-4 p-4">
+              <div class="card-body d-flex align-items-center gap-3">
+                <div class="contact-icon rounded-circle bg-warning text-dark p-3">
+                  <i class="bi bi-geo-alt-fill fs-4"></i>
+                </div>
+                <div>
+                  <h5 class="text-white fw-bold">Our Location</h5>
+                  <p class="text-white mb-0">
+                    123 Gaming Street, Esports City, EC 12345
+                  </p>
+                </div>
               </div>
             </div>
           </div>
  
-          <div class="payment-card-back paypal-back">
-            <span class="paypal-logo">P<span>›</span></span>
-            <h4>حساب PayPal</h4>
-            <label>البريد الإلكتروني</label>
-            <div class="card-field">seif@example.com</div>
-            <div class="paypal-status">✓ الحساب موثق</div>
+           <div class="col-12">
+            <div class="card contact-card border-0 rounded-4 p-4">
+              <div class="card-body d-flex align-items-center gap-3">
+                <div class="contact-icon rounded-circle bg-warning text-dark p-3">
+                  <i class="bi bi-telephone-fill fs-4"></i>
+                </div>
+                <div>
+                  <h5 class="text-white fw-bold">Phone Number</h5>
+                  <p class="text-white mb-0">+1 (555) 123-4567</p>
+                </div>
+              </div>
+            </div>
+          </div>
+ 
+           <div class="col-12">
+            <div class="card contact-card border-0 rounded-4 p-4">
+              <div class="card-body d-flex align-items-center gap-3">
+                <div class="contact-icon rounded-circle bg-warning text-dark p-3">
+                  <i class="bi bi-envelope-fill fs-4"></i>
+                </div>
+                <div>
+                  <h5 class="text-white fw-bold">Email Address</h5>
+                  <p class="text-white mb-0">contact@gamearena.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+ 
+           <div class="col-12">
+            <div class="card community-card border-0 rounded-4 p-4">
+              <div class="card-body">
+                <h5 class="fw-bold text-dark">Join Our Community</h5>
+ 
+                <p class="text-secondary">
+                  Connect with us on social media for the latest updates.
+                </p>
+ 
+                <div class="d-flex gap-3">
+                  <a href="#" class="btn btn-dark rounded-circle">
+                    <i class="bi bi-discord"></i>
+                  </a>
+                  <a href="#" class="btn btn-dark rounded-circle">
+                    <i class="bi bi-twitter-x"></i>
+                  </a>
+                  <a href="#" class="btn btn-dark rounded-circle">
+                    <i class="bi bi-instagram"></i>
+                  </a>
+                  <a href="#" class="btn btn-dark rounded-circle">
+                    <i class="bi bi-youtube"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+ 
+        </div>
+      </div>
+ 
+       <div class="col-lg-6">
+        <div class="card contact-card border-0 rounded-4 p-4 h-100">
+          <div class="card-body">
+ 
+            <h4 class="text-white fw-bold mb-4">Send Us a Message</h4>
+ 
+            <form>
+ 
+              <div class="row g-3 mb-3">
+                <div class="col-md-6">
+                  <label class="form-label text-white">First Name</label>
+                  <input type="text" class="form-control" placeholder="Your first name">
+                </div>
+ 
+                <div class="col-md-6">
+                  <label class="form-label text-white">Last Name</label>
+                  <input type="text" class="form-control" placeholder="Your last name">
+                </div>
+              </div>
+ 
+              <div class="mb-3">
+                <label class="form-label text-white">Email Address</label>
+                <input type="email" class="form-control" placeholder="your.email@example.com">
+              </div>
+ 
+              <div class="mb-3">
+                <label class="form-label text-white">Subject</label>
+                <select class="form-select">
+                  <option>General Inquiry</option>
+                  <option>Technical Support</option>
+                  <option>Gaming Tournaments</option>
+                  <option>Partnership</option>
+                </select>
+              </div>
+ 
+              <div class="mb-3">
+                <label class="form-label text-white">Message</label>
+                <textarea class="form-control" rows="5"
+                  placeholder="Tell us how we can help you..."></textarea>
+              </div>
+ 
+              <div class="form-check mb-4">
+                <input class="form-check-input" type="checkbox" id="newsletter">
+                <label class="form-check-label text-white small" for="newsletter">
+                  Subscribe to our newsletter for gaming updates
+                </label>
+              </div>
+ 
+              <button type="submit" class="btn btn-warning w-100 py-3 fw-bold">
+                Send Message <i class="bi bi-send-fill ms-2"></i>
+              </button>
+ 
+            </form>
+ 
+            <hr class="border-light my-4">
+ 
+            <div class="row text-center">
+              <div class="col-6">
+                <h4 class="text-warning fw-bold">24/7</h4>
+                <p class="text-white small">Support Available</p>
+              </div>
+ 
+              <div class="col-6">
+                <h4 class="text-warning fw-bold">&lt;1hr</h4>
+                <p class="text-white small">Average Response</p>
+              </div>
+            </div>
+ 
           </div>
         </div>
       </div>
  
     </div>
-  </section>
-</div>
- </div>
+  </div>
+</section>
+ 
+ 
+ <footer class="bg-black py-5">
+  <div class="container">
+ 
+    <div class="row g-4">
+ 
+      <div class="col-12 col-md-6 col-lg-3">
+        <h5 class="text-warning fw-bold mb-4">
+          <i class="bi bi-controller"></i> GameArena
+        </h5>
+ 
+        <p class="text-light small">
+          The ultimate destination for competitive gaming, esports
+          tournaments, and gaming community.
+        </p>
+ 
+        <div class="d-flex gap-3">
+          <a href="#" class="text-white"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" class="text-white"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="text-white"><i class="bi bi-youtube"></i></a>
+          <a href="#" class="text-white"><i class="bi bi-twitch"></i></a>
+        </div>
+      </div>
+ 
+      <div class="col-6 col-md-6 col-lg-3">
+        <h5 class="text-white fw-bold mb-4">Games</h5>
+        <ul class="list-unstyled">
+          <li class="mb-3"><a href="#games" class="text-light text-decoration-none">VALORANT</a></li>
+          <li class="mb-3"><a href="#games" class="text-light text-decoration-none">League of Legends</a></li>
+          <li class="mb-3"><a href="#games" class="text-light text-decoration-none">CS:GO</a></li>
+          <li class="mb-3"><a href="#games" class="text-light text-decoration-none">Dota 2</a></li>
+          <li><a href="#games" class="text-light text-decoration-none">Apex Legends</a></li>
+        </ul>
+      </div>
+ 
+      <div class="col-6 col-md-6 col-lg-3">
+        <h5 class="text-white fw-bold mb-4">Tournaments</h5>
+        <ul class="list-unstyled">
+          <li class="mb-3"><a href="#games" class="text-light text-decoration-none">Upcoming Events</a></li>
+          <li class="mb-3"><a href="#games" class="text-light text-decoration-none">Live Matches</a></li>
+          <li class="mb-3"><a href="#games" class="text-light text-decoration-none">Results</a></li>
+          <li class="mb-3"><a href="#games" class="text-light text-decoration-none">Rankings</a></li>
+          <li><a href="#games" class="text-light text-decoration-none">Schedule</a></li>
+        </ul>
+      </div>
+ 
+      <div class="col-6 col-md-6 col-lg-3">
+        <h5 class="text-white fw-bold mb-4">Support</h5>
+        <ul class="list-unstyled">
+          <li class="mb-3"><a href="#contact" class="text-light text-decoration-none">Help Center</a></li>
+          <li class="mb-3"><a href="#contact" class="text-light text-decoration-none">Contact Us</a></li>
+          <li class="mb-3"><a href="#contact" class="text-light text-decoration-none">Bug Reports</a></li>
+          <li class="mb-3"><a href="#contact" class="text-light text-decoration-none">Feature Requests</a></li>
+          <li><a href="#contact" class="text-light text-decoration-none">Community Guidelines</a></li>
+        </ul>
+      </div>
+ 
+    </div>
+ 
+    <hr class="border-secondary mt-4">
+ 
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <p class="text-white small mb-2 mb-md-0">
+          © 2025 GameArena. All rights reserved.
+        </p>
+      </div>
+ 
+      <div class="col-md-6 text-md-end">
+        <a href="#" class="text-white small text-decoration-none me-3">Privacy Policy</a>
+        <a href="#" class="text-white small text-decoration-none me-3">Terms of Service</a>
+        <a href="#" class="text-white small text-decoration-none">Cookie Policy</a>
+      </div>
+    </div>
+ 
+  </div>
+</footer>
+ 
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="./js/main.js"></script>
+
   </body>
 </html>
